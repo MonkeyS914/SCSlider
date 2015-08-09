@@ -5,7 +5,7 @@
 ![image](http://ww4.sinaimg.cn/bmiddle/7cafd2d5jw1euuga0t1kfj20ku112gsg.jpg) 
 ![image](http://ww3.sinaimg.cn/bmiddle/7cafd2d5jw1euug9ytn6rj20ku1120vz.jpg) 
 ![image](http://ww3.sinaimg.cn/bmiddle/7cafd2d5jw1euug9y1fhxj20ku112q4s.jpg) 
-https://raw.githubusercontent.com/MonkeyS914/SCSlider/master/screenshot/123.gif?2
+![image](https://raw.githubusercontent.com/MonkeyS914/SCSlider/master/screenshot/123.gif?2)
 
 
 一句话简单集成 
