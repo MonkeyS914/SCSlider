@@ -14,6 +14,22 @@
 		A57C8B551B771C5300D11EBC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57C8B541B771C5300D11EBC /* Images.xcassets */; };
 		A57C8B581B771C5300D11EBC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A57C8B561B771C5300D11EBC /* LaunchScreen.xib */; };
 		A57C8B641B771C5300D11EBC /* SCSliderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A57C8B631B771C5300D11EBC /* SCSliderTests.m */; };
+		A57C8B6E1B771C6C00D11EBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A57C8B6D1B771C6C00D11EBC /* Foundation.framework */; };
+		A57C8B701B771C7D00D11EBC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A57C8B6F1B771C7D00D11EBC /* CoreGraphics.framework */; };
+		A57C8B721B771C8300D11EBC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A57C8B711B771C8300D11EBC /* UIKit.framework */; };
+		A57C8B891B771CC600D11EBC /* DEMOFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A57C8B741B771CC600D11EBC /* DEMOFirstViewController.m */; };
+		A57C8B8A1B771CC600D11EBC /* DEMOLeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A57C8B761B771CC600D11EBC /* DEMOLeftMenuViewController.m */; };
+		A57C8B8B1B771CC600D11EBC /* DEMORightMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A57C8B781B771CC600D11EBC /* DEMORightMenuViewController.m */; };
+		A57C8B8C1B771CC600D11EBC /* DEMOSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A57C8B7A1B771CC600D11EBC /* DEMOSecondViewController.m */; };
+		A57C8B8D1B771CC600D11EBC /* back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A57C8B7D1B771CC600D11EBC /* back.jpg */; };
+		A57C8B8E1B771CC600D11EBC /* front.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A57C8B7E1B771CC600D11EBC /* front.jpg */; };
+		A57C8B8F1B771CC600D11EBC /* IconCalendar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A57C8B7F1B771CC600D11EBC /* IconCalendar@2x.png */; };
+		A57C8B901B771CC600D11EBC /* IconEmpty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A57C8B801B771CC600D11EBC /* IconEmpty@2x.png */; };
+		A57C8B911B771CC600D11EBC /* IconHome@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A57C8B811B771CC600D11EBC /* IconHome@2x.png */; };
+		A57C8B921B771CC600D11EBC /* IconProfile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A57C8B821B771CC600D11EBC /* IconProfile@2x.png */; };
+		A57C8B931B771CC600D11EBC /* IconSettings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A57C8B831B771CC600D11EBC /* IconSettings@2x.png */; };
+		A57C8B941B771CC600D11EBC /* SliderMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = A57C8B861B771CC600D11EBC /* SliderMenu.m */; };
+		A57C8B951B771CC600D11EBC /* UIViewController+SCSliderMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = A57C8B881B771CC600D11EBC /* UIViewController+SCSliderMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +56,28 @@
 		A57C8B5D1B771C5300D11EBC /* SCSliderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCSliderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57C8B621B771C5300D11EBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A57C8B631B771C5300D11EBC /* SCSliderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCSliderTests.m; sourceTree = "<group>"; };
+		A57C8B6D1B771C6C00D11EBC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A57C8B6F1B771C7D00D11EBC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A57C8B711B771C8300D11EBC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A57C8B731B771CC600D11EBC /* DEMOFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMOFirstViewController.h; sourceTree = "<group>"; };
+		A57C8B741B771CC600D11EBC /* DEMOFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMOFirstViewController.m; sourceTree = "<group>"; };
+		A57C8B751B771CC600D11EBC /* DEMOLeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMOLeftMenuViewController.h; sourceTree = "<group>"; };
+		A57C8B761B771CC600D11EBC /* DEMOLeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMOLeftMenuViewController.m; sourceTree = "<group>"; };
+		A57C8B771B771CC600D11EBC /* DEMORightMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMORightMenuViewController.h; sourceTree = "<group>"; };
+		A57C8B781B771CC600D11EBC /* DEMORightMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMORightMenuViewController.m; sourceTree = "<group>"; };
+		A57C8B791B771CC600D11EBC /* DEMOSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMOSecondViewController.h; sourceTree = "<group>"; };
+		A57C8B7A1B771CC600D11EBC /* DEMOSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMOSecondViewController.m; sourceTree = "<group>"; };
+		A57C8B7D1B771CC600D11EBC /* back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back.jpg; sourceTree = "<group>"; };
+		A57C8B7E1B771CC600D11EBC /* front.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = front.jpg; sourceTree = "<group>"; };
+		A57C8B7F1B771CC600D11EBC /* IconCalendar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IconCalendar@2x.png"; sourceTree = "<group>"; };
+		A57C8B801B771CC600D11EBC /* IconEmpty@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IconEmpty@2x.png"; sourceTree = "<group>"; };
+		A57C8B811B771CC600D11EBC /* IconHome@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IconHome@2x.png"; sourceTree = "<group>"; };
+		A57C8B821B771CC600D11EBC /* IconProfile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IconProfile@2x.png"; sourceTree = "<group>"; };
+		A57C8B831B771CC600D11EBC /* IconSettings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IconSettings@2x.png"; sourceTree = "<group>"; };
+		A57C8B851B771CC600D11EBC /* SliderMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderMenu.h; sourceTree = "<group>"; };
+		A57C8B861B771CC600D11EBC /* SliderMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderMenu.m; sourceTree = "<group>"; };
+		A57C8B871B771CC600D11EBC /* UIViewController+SCSliderMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SCSliderMenu.h"; sourceTree = "<group>"; };
+		A57C8B881B771CC600D11EBC /* UIViewController+SCSliderMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SCSliderMenu.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +85,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A57C8B721B771C8300D11EBC /* UIKit.framework in Frameworks */,
+				A57C8B701B771C7D00D11EBC /* CoreGraphics.framework in Frameworks */,
+				A57C8B6E1B771C6C00D11EBC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +122,17 @@
 		A57C8B461B771C5300D11EBC /* SCSlider */ = {
 			isa = PBXGroup;
 			children = (
+				A57C8B7B1B771CC600D11EBC /* framwork */,
+				A57C8B7C1B771CC600D11EBC /* image */,
+				A57C8B841B771CC600D11EBC /* SCSliderViewController */,
+				A57C8B731B771CC600D11EBC /* DEMOFirstViewController.h */,
+				A57C8B741B771CC600D11EBC /* DEMOFirstViewController.m */,
+				A57C8B751B771CC600D11EBC /* DEMOLeftMenuViewController.h */,
+				A57C8B761B771CC600D11EBC /* DEMOLeftMenuViewController.m */,
+				A57C8B771B771CC600D11EBC /* DEMORightMenuViewController.h */,
+				A57C8B781B771CC600D11EBC /* DEMORightMenuViewController.m */,
+				A57C8B791B771CC600D11EBC /* DEMOSecondViewController.h */,
+				A57C8B7A1B771CC600D11EBC /* DEMOSecondViewController.m */,
 				A57C8B4B1B771C5300D11EBC /* AppDelegate.h */,
 				A57C8B4C1B771C5300D11EBC /* AppDelegate.m */,
 				A57C8B4E1B771C5300D11EBC /* ViewController.h */,
@@ -117,6 +169,41 @@
 				A57C8B621B771C5300D11EBC /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A57C8B7B1B771CC600D11EBC /* framwork */ = {
+			isa = PBXGroup;
+			children = (
+				A57C8B711B771C8300D11EBC /* UIKit.framework */,
+				A57C8B6F1B771C7D00D11EBC /* CoreGraphics.framework */,
+				A57C8B6D1B771C6C00D11EBC /* Foundation.framework */,
+			);
+			path = framwork;
+			sourceTree = "<group>";
+		};
+		A57C8B7C1B771CC600D11EBC /* image */ = {
+			isa = PBXGroup;
+			children = (
+				A57C8B7D1B771CC600D11EBC /* back.jpg */,
+				A57C8B7E1B771CC600D11EBC /* front.jpg */,
+				A57C8B7F1B771CC600D11EBC /* IconCalendar@2x.png */,
+				A57C8B801B771CC600D11EBC /* IconEmpty@2x.png */,
+				A57C8B811B771CC600D11EBC /* IconHome@2x.png */,
+				A57C8B821B771CC600D11EBC /* IconProfile@2x.png */,
+				A57C8B831B771CC600D11EBC /* IconSettings@2x.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		A57C8B841B771CC600D11EBC /* SCSliderViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A57C8B851B771CC600D11EBC /* SliderMenu.h */,
+				A57C8B861B771CC600D11EBC /* SliderMenu.m */,
+				A57C8B871B771CC600D11EBC /* UIViewController+SCSliderMenu.h */,
+				A57C8B881B771CC600D11EBC /* UIViewController+SCSliderMenu.m */,
+			);
+			path = SCSliderViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +286,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A57C8B8D1B771CC600D11EBC /* back.jpg in Resources */,
 				A57C8B531B771C5300D11EBC /* Main.storyboard in Resources */,
 				A57C8B581B771C5300D11EBC /* LaunchScreen.xib in Resources */,
+				A57C8B901B771CC600D11EBC /* IconEmpty@2x.png in Resources */,
+				A57C8B8F1B771CC600D11EBC /* IconCalendar@2x.png in Resources */,
+				A57C8B8E1B771CC600D11EBC /* front.jpg in Resources */,
+				A57C8B921B771CC600D11EBC /* IconProfile@2x.png in Resources */,
+				A57C8B911B771CC600D11EBC /* IconHome@2x.png in Resources */,
+				A57C8B931B771CC600D11EBC /* IconSettings@2x.png in Resources */,
 				A57C8B551B771C5300D11EBC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,9 +313,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A57C8B8A1B771CC600D11EBC /* DEMOLeftMenuViewController.m in Sources */,
+				A57C8B891B771CC600D11EBC /* DEMOFirstViewController.m in Sources */,
 				A57C8B501B771C5300D11EBC /* ViewController.m in Sources */,
+				A57C8B951B771CC600D11EBC /* UIViewController+SCSliderMenu.m in Sources */,
 				A57C8B4D1B771C5300D11EBC /* AppDelegate.m in Sources */,
+				A57C8B8C1B771CC600D11EBC /* DEMOSecondViewController.m in Sources */,
 				A57C8B4A1B771C5300D11EBC /* main.m in Sources */,
+				A57C8B8B1B771CC600D11EBC /* DEMORightMenuViewController.m in Sources */,
+				A57C8B941B771CC600D11EBC /* SliderMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +448,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SCSlider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -358,6 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SCSlider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
