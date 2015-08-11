@@ -13,12 +13,16 @@ import SliderMenu.h
 在你的代码中添加下面一段
 SliderMenu *sliderMenuViewController = [[SliderMenu alloc] initWithContentViewController:navigationController leftMenuViewController:leftMenuViewController rightMenuViewController:rightMenuViewController]; 
 
+
 //添加背景图片 
 sliderMenuViewController.backgroundImage = [UIImage imageNamed:@"back.jpg"]; 
+
 //设置代理 
 sliderMenuViewController.delegate = self; 
+
 //添加手势识别 
 sliderMenuViewController.enableGesture = YES; 
+
 //设置动画时间 
 sliderMenuViewController.animationDuration = 0.4f; 
 
