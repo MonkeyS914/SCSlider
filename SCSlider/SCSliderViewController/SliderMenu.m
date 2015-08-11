@@ -269,16 +269,17 @@
             
             self.contentViewContainer.transform = CGAffineTransformIdentity;
             self.contentViewContainer.frame = self.view.bounds;
-
+            
+            self.backgroundImageView.transform = CGAffineTransformMakeScale(1.7f, 1.7f);
 
         } completion:^(BOOL finished) {
             [self hideViewController:self.contentViewController];
             [contentViewController didMoveToParentViewController:self];
             _contentViewController = contentViewController;
             
-            if (self.visible) {
-                
-            }
+            self.leftMenuViewController.view.hidden = YES;
+            self.rightMenuViewController.view.hidden = YES;
+            
         }];
     }
 }
