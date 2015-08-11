@@ -15,15 +15,19 @@ SliderMenu *sliderMenuViewController = [[SliderMenu alloc] initWithContentViewCo
 
 
 //添加背景图片 
+
 sliderMenuViewController.backgroundImage = [UIImage imageNamed:@"back.jpg"]; 
 
 //设置代理 
+
 sliderMenuViewController.delegate = self; 
 
 //添加手势识别 
+
 sliderMenuViewController.enableGesture = YES; 
 
 //设置动画时间 
+
 sliderMenuViewController.animationDuration = 0.4f; 
 
 还有其他参数可以在SliderMenu.m文件parameterInit函数里面设置
