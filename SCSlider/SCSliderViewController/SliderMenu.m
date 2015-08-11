@@ -104,6 +104,7 @@
     
     if (_leftMenuIsShow) {
         
+        [self.leftMenuViewController beginAppearanceTransition:YES animated:YES];
         
         [UIView animateWithDuration:self.animationDuration animations:^{
             
@@ -112,7 +113,12 @@
             
             self.contentViewContainer.transform = CGAffineTransformIdentity;
             self.contentViewContainer.frame = self.view.bounds;
+            
+            self.backgroundImageView.transform = CGAffineTransformMakeScale(1.7f, 1.7f);
         
+        }completion:^(BOOL finished) {
+            [self.leftMenuViewController endAppearanceTransition];
+            self.leftMenuViewController.view.hidden = YES;
         }];
         
         [self hideMenuViewController];
@@ -144,7 +150,9 @@
         //        self.contentViewContainer.alpha = self.contentViewFadeOutAlpha;
         self.menuViewContainer.transform = CGAffineTransformIdentity;
         if (self.scaleBackgroundImageView)
+        {
             self.backgroundImageView.transform = CGAffineTransformIdentity;
+        }
     }completion:^(BOOL finished) {
          [self.leftMenuViewController endAppearanceTransition];
          
@@ -162,7 +170,7 @@
 - (void)showRightMenuViewController{
     //
     
-    [self presentMenuViewContainerWithMenuViewController:self.leftMenuViewController];
+    [self presentMenuViewContainerWithMenuViewController:self.rightMenuViewController];
     
     if (!self.rightMenuViewController) {
         return;
@@ -170,6 +178,8 @@
     
     if (_rightMenuIsShow) {
         
+        
+        [self.rightMenuViewController beginAppearanceTransition:YES animated:YES];
         
         [UIView animateWithDuration:self.animationDuration animations:^{
             
@@ -179,6 +189,11 @@
             self.contentViewContainer.transform = CGAffineTransformIdentity;
             self.contentViewContainer.frame = self.view.bounds;
             
+            self.backgroundImageView.transform = CGAffineTransformMakeScale(1.7f, 1.7f);
+            
+        }completion:^(BOOL finished) {
+            [self.rightMenuViewController endAppearanceTransition];
+            self.rightMenuViewController.view.hidden = YES;
         }];
         
         [self hideMenuViewController];
@@ -201,11 +216,20 @@
         
         if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_7_1) {
             //设置homeview的位置
-            self.contentViewContainer.center = CGPointMake(self.view.frame.size.width*4/5, self.view.frame.size.height/2);
+            self.contentViewContainer.center = CGPointMake(self.view.frame.size.width*1/5, self.view.frame.size.height/2);
             
         } else {
-            self.contentViewContainer.center = CGPointMake(self.view.frame.size.width*4/5, self.view.frame.size.height/2);
+            self.contentViewContainer.center = CGPointMake(self.view.frame.size.width*1/5, self.view.frame.size.height/2);
         }
+        
+        self.menuViewContainer.alpha = !self.fadeMenuView ?: 1.0f;
+        //        self.contentViewContainer.alpha = self.contentViewFadeOutAlpha;
+        self.menuViewContainer.transform = CGAffineTransformIdentity;
+        if (self.scaleBackgroundImageView)
+        {
+            self.backgroundImageView.transform = CGAffineTransformIdentity;
+        }
+        
     }completion:^(BOOL finished) {
         [self.rightMenuViewController endAppearanceTransition];
         
