@@ -11,6 +11,7 @@
 import SliderMenu.h 
 
 在你的代码中添加下面一段
+
 SliderMenu *sliderMenuViewController = [[SliderMenu alloc] initWithContentViewController:navigationController leftMenuViewController:leftMenuViewController rightMenuViewController:rightMenuViewController]; 
 
 
