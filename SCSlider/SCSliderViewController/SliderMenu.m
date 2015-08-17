@@ -52,7 +52,7 @@
     _contentViewContainer = [[UIView alloc] init];
     _enableGesture = YES;
     
-    _contentViewScaleValue = 0.8f;
+//    _contentViewScaleValue = 0.8f;
     _contentViewCenterPoint = 0.7f;
 //    _animationDuration = 0.4f;
     _scaleContentView = YES;
@@ -163,6 +163,7 @@
          self.visible = YES;
          self.leftMenuVisible = YES;
         _leftMenuIsShow = YES;
+        _isFromLeft = YES;
      }];
 
 }
@@ -240,6 +241,7 @@
         self.visible = YES;
         self.rightMenuVisible = YES;
         _rightMenuIsShow = YES;
+        _isFromRight = YES;
     }];
 
     
@@ -406,6 +408,7 @@
     if (self.scaleBackgroundImageView)
         self.backgroundImageView.transform = CGAffineTransformMakeScale(1.7f, 1.7f);
 
+    //addGesture
     
     if (self.enableGesture) {
         self.leftSwipeGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipes:)];
@@ -423,21 +426,39 @@
 {
     
     if ([self.delegate conformsToProtocol:@protocol(SliderMenuDelegate)] && [self.delegate respondsToSelector:@selector(sideMenu:didRecognizePanGesture:)])
-
+    {
+    }
     
     if (sender.direction == UISwipeGestureRecognizerDirectionLeft) {
+        //向左滑动
         if (_leftMenuIsShow) {
+            [self showLeftMenuViewController];
+        }
+        else if (_isFromRight){
+            _isFromRight = NO;
             return;
         }
-        [self showLeftMenuViewController];
+        else
+        {
+            [self showRightMenuViewController];
+        }
     }
     
     if (sender.direction == UISwipeGestureRecognizerDirectionRight) {
+        //向右滑动
         if (_rightMenuIsShow) {
+            [self showRightMenuViewController];
+        }
+        else if (_isFromLeft){
+            _isFromLeft = NO;
             return;
         }
-        [self showLeftMenuViewController];
+        else
+        {
+            [self showLeftMenuViewController];
+        }
     }
+
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{

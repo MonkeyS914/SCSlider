@@ -36,6 +36,7 @@
     sliderMenuViewController.delegate = self;
     sliderMenuViewController.enableGesture = YES;
     sliderMenuViewController.animationDuration = 0.4f;
+    sliderMenuViewController.contentViewScaleValue = 0.8f;
     
     
     self.window.rootViewController = sliderMenuViewController;
