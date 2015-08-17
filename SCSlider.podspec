@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "SCSlider"
   s.version      = "1.2"
-  s.summary      = "侧滑菜单"
+  s.summary      = "侧滑菜单栏"
 
   s.description  = <<-DESC
                    A longer description of SCSlider in Markdown format.
@@ -53,9 +53,9 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "MonkeyS914" => "" }
+  s.author             = { "MonkeyS914" => "4919668@qq.com" }
   # Or just: s.author    = "MonkeyS914"
-  # s.authors            = { "MonkeyS914" => "" }
+  # s.authors            = { "MonkeyS914" => "4919668@qq.com" }
   # s.social_media_url   = "http://twitter.com/MonkeyS914"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/MonkeyS914/SCSlider.git", :tag => "1.1" }
+  s.source       = { :git => "https://github.com/MonkeyS914/SCSlider.git", :tag => "1.2" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,7 +90,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "SCSlider", "SCSlider/**/*.{h,m}"
+  s.source_files  = "SCSlider/**/*.{h,m}"
   s.exclude_files = "SCSlider/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -117,7 +117,7 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  s.frameworks = "Foundation", "CoreGraphics","UIKit"
+  s.frameworks = "UIKit", "CoreGraphics","Foundation"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
